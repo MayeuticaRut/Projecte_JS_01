@@ -20,9 +20,11 @@
 }
 /************  FIN ASIDE NUESTRO VALORES   **************/
 
-/******************** FORMULARIO  *********************/  
+/******************** FORMULARIO  *********************/
 /* clase del fieldset */
 .formulario {
+  font-family: "roboto-regular";
+  font-size: 18px;
   display: flex;
   justify-content: center;
 }
@@ -32,7 +34,7 @@
   flex-direction: column;
   gap: 28px;
 }
-legend {
+.formulario legend {
   font-size: 36px;
   padding: 33px 0 33px 0;
   margin: 0 auto;
@@ -48,12 +50,20 @@ legend {
 .label_normal input {
   width: 666px;
   height: 36px;
+ font-family: "roboto-light";
+ font-size: 18px;
+
   background-color: rgba(148, 148, 148, 0.1);
+  color: #7e7e7e;
 }
 .label_normal textarea {
   width: 666px;
   height: 194px;
+  font-family: "roboto-light";
+  font-size: 18px;
+
   background-color: rgba(148, 148, 148, 0.1);
+  color: #7e7e7e;
 }
 .align_center button {
   width: 175px;
@@ -72,8 +82,12 @@ legend {
   align-items: center;
   justify-content: center;
 }
-#politica {
-width: 22px;
+.align_center #politica{
+  width: 22px;
 }
+.align_center label {
+  font-size: 12px;
+}
+
 
 /*                       FIN FORMULARIO                   */

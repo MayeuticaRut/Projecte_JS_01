@@ -14,10 +14,11 @@
     <link rel="stylesheet" href="css/estilo_movil.css" />
   </head>
   <body>
-    <!-- HEADER : LOGO MENU Y BREADCRUMBS-->
+    <!-- HEADER : LOGO MENU Y BREADCRUMBS -->
     <header>
+
       <!-- LOGO Y MENU -->
-      <div class="cabecera display_flex justify_content_space_between">
+      <div class="cabecera">
         <!-- LOGO ESCRITORIO Y MOVIL -->
         <picture>
           <source
@@ -37,8 +38,8 @@
         <!-- FIN IMAGEN MENU HAMBURGUESA -->
 
         <!-- NAV MENU -->
-        <nav class="nav_menu">
-          <ul class="display_flex justify_content_space_between">
+        <nav id="nav_menu" class="nav_menu">
+          <ul>
             <li><a href="project01_inicio.html" target="_blank">INICIO</a></li>
             <li><a href="#" target="_blank">HISTORIA</a></li>
             <li><a href="#" target="_blank">SERVICIOS</a></li>
@@ -46,6 +47,7 @@
           </ul>
         </nav>
       </div>
+
       <!-- BREADCRUMB -->
       <div aria-label="Breadcrumb" class="breadcrumb">
         <nav>
@@ -60,6 +62,7 @@
         </nav>
       </div>
       <!-- FIN BREADCRUMB -->
+
     </header>
     <!--FIN HEADER -->
 
@@ -175,7 +178,7 @@
             />
           </picture>
           <h3>Empresas</h3>
-          <button type="button" title="Ir a menú para empresas">Ver menú</button>
+          <button class="empresa_page" title="Ir a menú para empresas">Ver menú</button>
         </div>
 
         <div class="celebraciones">
@@ -235,19 +238,19 @@
           <address>Telf.: 93 542 65 65</address>
         </li>
 
-        <li>
+        <li class="elemento1">
           <a href="https://facebook.com/FarteraCatering"
-            ><img src="icon/facebook.svg" alt="icono de facebook"
+          target="_blank"><img src="icon/facebook.svg" alt="icono de facebook"
           /></a>
         </li>
-        <li>
+        <li class="elemento2">
           <a href="https://twitter.com/FarteraCatering"
-            ><img src="icon/instagram.svg" alt="icono de instagram"
+          target="_blank"><img src="icon/instagram.svg" alt="icono de instagram"
           /></a>
         </li>
-        <li>
+        <li class="elemento3">
           <a href="https://instagram.com/FarteraCatering"
-            ><img src="icon/twitter.svg" alt="icono de twitter"
+            target="_blank"><img src="icon/twitter.svg" alt="icono de twitter"
           /></a>
         </li>
         <li>

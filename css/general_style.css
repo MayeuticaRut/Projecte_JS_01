@@ -38,14 +38,21 @@ h2 {
 /* LOGO ESCRITORIO LOGO MOVIL */
 .cabecera picture {
   width: 234px;
-  height: 13.9375rem;
 }
 
 .cabecera {
   font-size: 1.125rem;
 
   height: 13.9375rem;
-  padding: 2.25rem; /*36px*/
+  margin: 2.25rem; /*36px*/
+
+  display: flex;
+  justify-content: space-between;
+}
+
+/************************************ BOTON MENU HAMBURGUESA ***********/
+#boton {
+  display: none;
 }
 
 /*****************************************  NAV  *************************************/
@@ -55,16 +62,15 @@ h2 {
 /* el profe dice lo correcto crear la clase en el nav para esto */
 .nav_menu {
   width: 502px;
-
+  display: block;
   align-self: flex-end;
 }
 
 .nav_menu ul {
   display: flex;
+  justify-content: space-between;
 }
-/* .nav_menu img {
-  display: none;
-} */
+
 
 /* +++ LVHA +++ */
 
@@ -111,11 +117,6 @@ a:active {
   background-size: contain;
 
   display: inline-block;
-
-  /* content: ' >'; */
-  /* transform: rotate(15deg); */
-  /* border-right: 0.1em solid currentcolor; */
-  /* height: 0.8em; */
 }
 
 /**cuando es la página actual se pone en negrita**/
@@ -131,7 +132,7 @@ a:active {
 .nuestros_menus {
   display: flex;
   flex-wrap: wrap;
-  
+
   gap: 10.75rem; /* 108px */
   padding: 90px 109px 113px 109px;
 }
