@@ -1,0 +1,211 @@
+/*************                               BODY                                 **********/
+body {
+  font-family: "roboto-regular";
+  font-size: 1rem;
+  background-color: #fff;
+}
+/* esto es general para el nav menu y para breadcrumb */
+/* listas */
+li {
+  list-style-type: none;
+}
+
+li a {
+  color: black;
+  text-decoration: none;
+}
+/* titulo 1 */
+h1 {
+  font-size: 3rem;
+  text-align: center;
+
+  padding-top: 2.0625rem; /*33px*/
+}
+
+h2 {
+  font-size: 3rem;
+}
+/*                fin general                        */
+
+/*************          HEADER         *************/
+.display_flex {
+  display: flex;
+}
+.justify_content_space_between {
+  justify-content: space-between;
+}
+
+/* LOGO ESCRITORIO LOGO MOVIL */
+.cabecera picture {
+  width: 234px;
+  height: 13.9375rem;
+}
+
+.cabecera {
+  font-size: 1.125rem;
+
+  height: 13.9375rem;
+  padding: 2.25rem; /*36px*/
+}
+
+/*****************************************  NAV  *************************************/
+/* nav.nav_menu es más específico
+.nav_menu es menos específico */
+
+/* el profe dice lo correcto crear la clase en el nav para esto */
+.nav_menu {
+  width: 502px;
+
+  align-self: flex-end;
+}
+
+.nav_menu ul {
+  display: flex;
+}
+/* .nav_menu img {
+  display: none;
+} */
+
+/* +++ LVHA +++ */
+
+/* este es el orden** */
+
+/* Aspecto de un enlace que aún no ha sido visitado: las cosas globales,*/
+a:link {
+  text-decoration: none;
+}
+
+/* Aspecto de un enlace una vez ha sido visitado:*/
+/* a:visited {
+  color: brown;
+} */
+
+/* Aspecto de un enlace al "pasar por encima" o tap en una pantalla táctil:
+https://developer.mozilla.org/en-US/docs/Web/CSS/:hover */
+a:hover {
+  text-decoration: underline;
+}
+
+/* Aspecto del enlace una vez este está mostrándose activo:
+https://developer.mozilla.org/en-US/docs/Web/CSS/:active */
+a:active {
+  /* se puede usar cualquiera de los dos */
+  /* filter: drop-shadow(0px 2px 2px 0px rgba(0,0,0,0.75)); */
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+/************************************ BREADCRUMBS ******************************************/
+
+.breadcrumb {
+  padding: 20px 2.25rem 0 2.25rem; /*36px*/
+}
+
+.breadcrumb li + li::before {
+  margin: 0 1.25rem;
+  width: 9px;
+  height: 13px;
+  content: " ";
+
+  background-image: url("../icon/Shape@2x.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  display: inline-block;
+
+  /* content: ' >'; */
+  /* transform: rotate(15deg); */
+  /* border-right: 0.1em solid currentcolor; */
+  /* height: 0.8em; */
+}
+
+/**cuando es la página actual se pone en negrita**/
+.breadcrumb [aria-current="page"] {
+  color: #000;
+  font-weight: 700;
+  text-decoration: none;
+}
+/************************************ FIN BREADCRUMBS ************************************/
+
+/******************************** NUESTROS MENUS *********************************/
+
+.nuestros_menus {
+  display: flex;
+  flex-wrap: wrap;
+  
+  gap: 10.75rem; /* 108px */
+  padding: 90px 109px 113px 109px;
+}
+.nuestros_menus div {
+  width: 15.9375rem; /*255px */
+  height: 372px; /*372px */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+/* PICTURE */
+.mascara {
+  width: 255px;
+  height: 255px;
+
+  mask-image: url("../img/Ellipse_2.png");
+  -webkit-mask-image: url("../img/Ellipse_2.png");
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  /* mask-position: 50%;  X / Y  */
+}
+/* IMG */
+/* .foto-apaisada {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  Mantiene la proporción 
+  overflow: hidden;
+} 
+*/
+.nuestros_menus h3 {
+  font-size: 34px;
+}
+aside h2 {
+  padding-top: 54px;
+
+  text-align: center;
+}
+.nuestros_menus button {
+  font-size: 14px;
+  width: 102px;
+  height: 36px;
+
+  border-radius: 2px;
+  background: #069697;
+  color: white;
+
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+/*************                 FOOTER                ************/
+
+footer {
+  height: 205px;
+  background-color: black;
+  color: white;
+
+  font-size: 1rem; /* 16px */
+  padding: 46px 87px 58px 87px;
+}
+footer img {
+  width: 45px;
+  height: 45px;
+}
+footer a {
+  color: #fff;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 205px 289px 168px 45px 45px 45px;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2.375rem; /* 38px */
+}

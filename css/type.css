@@ -1,0 +1,40 @@
+/* LIGHT */
+@font-face {
+  font-family: "roboto-light";
+  src: url("../tipo/Roboto-Light-webfont.eot");
+  src: url("../tipo/Roboto-Light-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("../tipo/Roboto-Light-webfont.woff") format("woff"),
+    url("../tipo/Roboto-Light-webfont.ttf") format("truetype"),
+    url("../tipo/Roboto-Light-webfont.svg#roboto-light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+/*  SVG #open_sansregular es para safari */
+/* #iefix para que funcione en explorer */
+/* src: url("../tipo/Roboto-Light-webfont.eot"); para que funcione explorer, va así solito */
+
+/* REGULAR */
+@font-face {
+  font-family: "roboto-regular";
+  src: url("../tipo/Roboto-Regular-webfont.eot");
+  src: url("../tipo/Roboto-Light-webfont.woff") format("woff"),
+    url("../tipo/Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../tipo/Roboto-Regular-webfont.ttf") format("truetype"),
+    url("../tipo/Roboto-Regular-webfont.svg#roboto-regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* MEDIUM */
+@font-face {
+  font-family: "roboto-medium";
+  src: url("../tipo/Roboto-Medium-webfont.eot");
+  src: url("../tipo/Roboto-Medium-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("../tipo/Roboto-Medium-webfont.ttf") format("truetype"),
+    url("../tipo/Roboto-Medium-webfont.woff") format("woff"),
+    url("../tipo/Roboto-Medium-webfont.svg#roboto-medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}

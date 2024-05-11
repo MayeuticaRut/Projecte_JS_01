@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Fartera Catering</title>
+    <!-- META -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- TIPOLOGIA -->
+    <link rel="stylesheet" href="css/type.css" />
+    <!-- LINK -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/general_style.css" />
+    <link rel="stylesheet" href="css/estilo_inicio.css" />
+    <link rel="stylesheet" href="css/estilo_movil.css" />
+  </head>
+  <body>
+    <!-- HEADER : LOGO MENU Y BREADCRUMBS-->
+    <header>
+      <div class="cabecera display_flex justify_content_space_between">
+       
+        <!-- LOGO ESCRITORIO Y MOVIL -->
+       <picture>
+        <source
+          srcset="logo/FC-logo-isotipo.svg"
+          media="(max-width: 480px)"
+        />
+        <img
+          src="logo/FC-logo-horizontal.svg"
+          alt="Logo + Fartera Catering"
+        />
+      </picture>
+
+      <!-- IMAGEN MENU HAMBURGUESA -->
+      <a id="boton">
+        <img src="icon/bars-solid.svg" alt="Menu hamburguesa" />
+      </a>
+      <!-- FIN IMAGEN MENU HAMBURGUESA -->
+
+        <!-- NAV MENU -->
+        <nav class="nav_menu">
+          <ul class="display_flex justify_content_space_between">
+            <li><a href="project01_inicio.html" target="_blank">INICIO</a></li>
+            <li><a href="#" target="_blank">HISTORIA</a></li>
+            <li><a href="project01_empresa.html">SERVICIOS</a></li>
+            <li><a href="#" target="_blank">CONTACTOS</a></li>
+          </ul>
+        </nav>
+
+      </div>
+      
+      <!-- BREADCRUMB -->
+      <div aria-label="Breadcrumb" class="breadcrumb">
+        <nav>
+          <ol class="display_flex">
+            <li>
+              <a href="project01_inicio.html" target="_blank">INICIO </a>
+            </li>
+            <li>
+              <a href="#">SERVICIOS</a>
+            </li>
+            <li>
+              <a href="#" aria-current="page">MENÚ EMPRESAS</a>
+            </li>
+          </ol>
+        </nav>
+      </div>
+  
+    </header>
+    <!--FIN HEADER -->
+
+    <!-- ASIDE DESCUBRE NUESTROS MENUS -->
+    <aside>
+      <h2>Descubre nuestros menus</h2>
+
+      <div class="nuestros_menus">
+        <div class="empresa">
+          <picture class="mascara">
+            <source
+              srcset="
+                img/empresa.jpg,
+                img/empresa@2x.jpg 2x,
+                img/empresa@3x.jpg 3x
+              "
+            />
+            <img
+              class="foto-apaisada"
+              src="img/empresa@3x.jpg"
+              alt="calabaza con crema de calabaza"
+            />
+          </picture>
+          <h3>Empresas</h3>
+          <button title="Ir a menú para empresas">Ver menú</button>
+        </div>
+
+        <div class="celebraciones">
+          <picture class="mascara">
+            <source
+              srcset="
+                img/celebraciones.jpg,
+                img/celebraciones@2x.jpg 2x,
+                img/celebraciones@3x.jpg 3x
+              "
+            />
+            <img
+              class="foto-apaisada"
+              src="img/celebraciones@3x.jpg"
+              alt="ensalada emplatada"
+            />
+          </picture>
+
+          <h3>Celebraciones</h3>
+          <button title="Ir a menú para celebraciones">Ver menú</button>
+        </div>
+
+        <div class="escuela">
+          <picture class="mascara">
+            <source
+              srcset="
+                img/escuela.jpg,
+                img/escuela@2x.jpg 2x,
+                img/escuela@3x.jpg 3x
+              "
+            />
+            <img
+              class="foto-apaisada"
+              src="img/escuela@3x.jpg"
+              alt="tres bandejas con comida preparada"
+            />
+          </picture>
+          <h3>Escuelas</h3>
+          <button title="Ir a menú para escuela">Ver menú</button>
+        </div>
+      </div>
+    </aside>
+    <!-- FIN ASIDE DESCUBRE NUESTROS MENUS -->
+    
+    <!-- FOOTER -->
+    <footer>
+      <ul class="grid">
+        <li>
+          <span>© 2020 - Fartera Catering.</span>
+        </li>
+       
+        <li>
+          <address>C/ Llacuna 162, 08018 Barcelona.</address>
+        </li>
+       
+        <li>
+          <address>Telf.: 93 542 65 65</address>
+        </li>
+       
+        <li>
+          <a href="https://facebook.com/FarteraCatering"
+            ><img src="icon/facebook.svg" alt="icono de facebook"
+          /></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/FarteraCatering"
+            ><img src="icon/instagram.svg" alt="icono de instagram"
+          /></a>
+        </li>
+        <li>
+          <a href="https://instagram.com/FarteraCatering"
+            ><img src="icon/twitter.svg" alt="icono de twitter"
+          /></a>
+        </li>
+        <li>
+          <span><a href="">Aviso legal</a></span>
+        </li>
+        <li>
+          <span><a href="#">Política de pivacidad</a></span>
+        </li>
+        <li>
+          <span><a href="">Política de cookies</a></span>
+        </li>
+      </ul>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script src="js/script.js"></script>
+    
+  </body>
+</html>
