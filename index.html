@@ -39,11 +39,11 @@
         
         <!-- NAV MENU -->
         <nav class="nav_menu">
-          <ul class="display_flex justify_content_space_between">
+          <ul>
             <li><a href="#">INICIO</a></li>
             <li><a href="#">HISTORIA</a></li>
-            <li><a href="project01_empresa.html">SERVICIOS</a></li>
-            <li><a href="project01_contacto.html">CONTACTOS</a></li>
+            <li><a href="project01_empresa.html" target="_blank">SERVICIOS</a></li>
+            <li><a href="project01_contacto.html" target="_blank">CONTACTOS</a></li>
           </ul>
         </nav>
 
@@ -81,8 +81,11 @@
     <!-- SECCION NUESTROS VALORES -->
     <main>
       <h1>Nuestros Valores</h1>
-      <section class="nuestros_valores">
-        <article>
+      <section class="nuestros_valores row_reverse">
+        <article class="art_img">
+          <img src="img/profesionalidad.jpg" alt="Un hombre sirviendo una botella en multiples vasos" />
+        </article>
+        <article class="art_text">
           <h2>Profesionalidad</h2>
           <p>
             Un extenso grupo de profesionales reunidos por y para satisfacer las
@@ -90,8 +93,17 @@
           </p>
           <button>CONTACTAR</button>
         </article>
+      </section>
+      <section class="nuestros_valores">
         <article>
-          <img src="img/profesionalidad.jpg" alt="Una imagen muy profesional" />
+          <img src="img/compromiso.jpg" alt="dos cacerolas muy grandes con comida hirviendo dentro " />
+        </article>
+        <article>
+          <h2>Compromiso</h2>
+          <p>
+            Seleccionamos productos frescos de temporada y trabajamos con pequeños proveedores de km0. Queremos dejar huella.
+          </p>
+          <button>CONTACTAR</button>
         </article>
       </section>
     </main>
@@ -117,7 +129,7 @@
             />
           </picture>
           <h3>Empresas</h3>
-          <button title="Ir a menú para empresas">Ver menú</button>
+          <button id="empresa_page" title="Ir a menú para empresas">Ver menú</button>
         </div>
 
         <div class="celebraciones">

@@ -8,18 +8,17 @@
     height: 87px;
   }
 
-  /* HEADER */
+  /**************************** HEADER *************************/
   .cabecera {
     height: 97px;
 
     margin-bottom: 33px;
   }
-/******* NAV ******/
+  /******* NAV ******/
   /* NAV 1820 */
   .nav_menu {
     display: none;
   }
- 
 
   /* BOTON MENU HAMBURGUESA */
   #boton {
@@ -31,18 +30,54 @@
   #boton img {
     width: 55px;
     height: 45px;
-    /* margin: 5px 15px 5px 0; */
   }
 
   /* BREADCRUMB */
   .breadcrumb {
     display: none;
   }
+  /************************* FIN HEADER *************************/
 
-  /************************* PORTADA ****************************/
-
+  /************************* INDEX ****************************/
+  /* PORTADA */
   .portada img {
-   display: none;
+    display: none;
+  }
+  /* NUESTROS VALORES */
+  main {
+    gap: 33px;
+  }
+  main h1 {
+    width: 195px;
+    height: 112px;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+  .nuestros_valores {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    gap: 18px;
+  }
+  .nuestros_valores .art_text {
+    width: 320px;
+    height: 340px;
+  }
+  .nuestros_valores article img {
+    width: 320px;
+    height: 186px;
+    margin: 0 auto;
+  }
+  .nuestros_valores article p {
+    width: 255px;
+  }
+  .row_reverse {
+    flex-direction: row;
+  }
+  .nuestros_valores button {
+    width: 280px;
   }
 
   /************************* FORMULARIO *************************/
@@ -71,40 +106,46 @@
     margin: 0 auto;
     width: 280px;
   }
+  .align_center button {
+    width: 280px;
+  }
   /************************* FIN FORMULARIO **********************/
 
   /******************** ASIDE DESCUBRE NUESTROS MENUS **************/
   .nuestros_menus {
     gap: 52px;
     justify-content: center;
+    padding: auto 0 auto 0 ;
   }
   /***************** FIN ASIDE DESCUBRE NUESTROS MENUS **************/
 
   /************************* FOOTER **********************************/
-footer {
-  height: auto;
-  padding: 45px 0 22px 0;
-}
+  footer {
+    height: auto;
+    padding: 45px 25px 22px 25px;
+  }
   .grid {
-  gap: 18px;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto auto auto auto auto;
-  grid-auto-flow: dense;
+    gap: 18px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-auto-flow: dense;
+  }
+  .grid li {
+    grid-column: 1 / 4;
+  }
 
-}
-.elemento1, .elemento3, .elemento2 {
-  grid-column: 1 / -1;
-}
-.elemento1{
-  grid-row: 4;
-}
-.elemento2{
-  grid-row: 4;
-}
-.elemento3{
-  grid-row: 4;
-}
+  .grid .elemento1 {
+    grid-column: 1 / 2;
+    grid-row: 4;
+  }
+  .grid .elemento2 {
+    grid-column: 2 / 3;
+    grid-row: 4;
+  }
+  .grid .elemento3 {
+    grid-column: 3 / 4;
+    grid-row: 4;
+  }
 
-
-  /************************* FOOTER **********************************/
+  /************************* FIN FOOTER ******************************/
 }
