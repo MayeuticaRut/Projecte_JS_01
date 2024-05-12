@@ -109,13 +109,49 @@ main {
 }
 /******************* FIN FORMULARIO *******************/
 
-/*                   EMPRESA                  */
-/********************* MENU PARA EMPRESA *************************/
-.sec_menu_empresa {
-width: 475px;
+/*                   EMPRESA   Y  ESCUELA               */
+/********************* MENU PARA EMPRESA Y ESCUELA *************************/
+
+.sec_menu_empresa, .sec_menu_escuela {
+margin: 0 115px 0 115px;
 
 display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 32px;
 
 }
+.sec_menu_empresa article, .sec_menu_escuela article {
 
-/********************* FIN EMPRESA *************************/
+  display: flex;
+  flex-direction: column;
+
+  gap: 26px;
+  line-height: 24px; /* 150% */ 
+
+}
+.sec_menu_empresa ul li, .sec_menu_empresa p {
+  /* font-size: 1rem; */
+  padding-left: 20px;
+
+}
+.menu_escuela h2 {
+  text-align: center;
+}
+main span, main p {
+  font-size: 1.25rem;
+  text-align: center;
+  margin: 30px;
+}
+
+/*******************  FIN MENU PARA ESCUELA Y EMPRESA ********************/
+
+/* pokitica de privaxidad */
+article h3 {
+  font-size: 2rem;
+}
+article address {
+  text-align: center;
+  display: inline;
+}
+
+

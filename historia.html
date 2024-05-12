@@ -16,7 +16,6 @@
   <body>
     <!-- HEADER : LOGO MENU Y BREADCRUMBS -->
     <header>
-
       <!-- LOGO Y MENU -->
       <div class="cabecera">
         <!-- LOGO ESCRITORIO Y MOVIL -->
@@ -42,8 +41,12 @@
           <ul>
             <li><a href="index.html" target="_blank">INICIO</a></li>
             <li><a href="#">HISTORIA</a></li>
-            <li><a href="project01_empresa.html" target="_blank">SERVICIOS</a></li>
-            <li><a href="#">CONTACTOS</a></li>
+            <li>
+              <a href="project01_empresa.html" target="_blank">SERVICIOS</a>
+            </li>
+            <li>
+              <a href="project01_contacto.html" target="_blank">CONTACTOS</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -56,113 +59,61 @@
               <a href="index.html" target="_blank">INICIO </a>
             </li>
             <li>
-              <a href="#" aria-current="page">CONTACTOS</a>
+              <a href="#">HISTORIA</a>
             </li>
           </ol>
         </nav>
       </div>
       <!-- FIN BREADCRUMB -->
-
     </header>
     <!--FIN HEADER -->
 
-    <!-- FORMULARIO CONTACTO -->
     <main>
-      <h1>Contacto</h1>
-      <form method="post" enctype="multipart/form-data" name="register-form">
-        <fieldset class="formulario">
-          <legend>Solicita presupuesto</legend>
-          <ul>
-            <li class="label_normal">
-              <label for="nombre">Nombre</label>
-              <input
-                id="nombre"
-                name="nombre"
-                type="text"
-                placeholder="Escriba aquí su nombre"
-                tabindex="1"
-                required
-              />
-            </li>
-            <li class="label_normal">
-              <label for="empresa">Empresa</label>
-              <input
-                id="empresa"
-                name="empresa"
-                type="text"
-                placeholder="Escriba aquí su empresa"
-                tabindex="2"
-                required/>
-            </li>
-            <li class="label_normal">
-              <label for="web">Web</label>
-              <input
-                id="web"
-                name="web"
-                type="url"
-                placeholder="Escriba aquí el url, inicie por https://"
-                tabindex="3"
-                required
-              />
-            </li>
-            <li class="label_normal">
-              <label for="asistentes"
-                >Número de asistentes aproximado (mínimo 20 - máximo 200)</label
-              >
-              <input
-                id="asistentes"
-                name="asistentes"
-                type="number"
-                min="20"
-                max="200"
-                value="20"
-                placeholder="Escriba aquí el url, inicie por https://"
-                tabindex="4"
-                required
-              />
-            </li>
-            <li class="label_normal">
-              <label for="email">Email</label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                placeholder="Escriba aquí su email"
-                pattern="^((?!\.)[\w\-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$"
-                tabindex="5"
-                required
-              />
-            </li>
-            <li class="label_normal">
-              <label for="mensaje">Mensaje</label>
-              <textarea
-                name="mensaje"
-                id="mensaje"
-                placeholder="Escriba aquí su mensaje"
-                tabindex="6"
-              ></textarea>
-            </li>
-            <li class="align_center">
-              <input id="politica" type="checkbox" tabindex="7" required />
-              <label for="politica"
-                >He leído y acepto la <a>política de privacidad</a></label
-              >
-            </li>
-            <li class="align_center">
-              <button type="submit" tabindex="8">CONTACTAR</button>
-            </li>
-          </ul>
-        </fieldset>
-      </form>
+      <h1>Historia</h1>
+      <article>
+        <p>
+          En Fartera Catering, nuestra historia se remonta a 1998, cuando
+          comenzamos este apasionante viaje culinario. Desde entonces, nos hemos
+          convertido en un referente en el mundo del catering, ofreciendo
+          servicios excepcionales a nuestros valiosos clientes.
+        </p>
+        <p>
+          Con una visión clara de brindar experiencias culinarias únicas, nos
+          esforzamos por combinar la excelencia gastronómica con un servicio
+          impecable. A lo largo de los años, hemos deleitado a numerosos
+          clientes con nuestras propuestas culinarias innovadoras y sabrosas.
+        </p>
+        <p>
+          Nuestra trayectoria se ha construido sobre la calidad de los
+          ingredientes, la creatividad de nuestros chefs y el compromiso con la
+          satisfacción del cliente. Cada evento es tratado como una oportunidad
+          para impresionar, superar expectativas y crear recuerdos duraderos.
+        </p>
+        <p>
+          Estamos orgullosos de haber participado en una amplia gama de eventos,
+          desde celebraciones íntimas hasta grandes eventos corporativos.
+          Nuestro enfoque personalizado nos ha permitido adaptarnos a las
+          necesidades y deseos específicos de cada cliente, asegurando que cada
+          ocasión sea verdaderamente especial.
+        </p>
+        <p>
+          Agradecemos a nuestros leales clientes y al talentoso equipo de
+          profesionales que han sido parte integral de nuestro éxito. Mirando
+          hacia el futuro, seguimos comprometidos con la excelencia y la
+          innovación en la industria de catering, ofreciendo servicios
+          excepcionales y creando experiencias gastronómicas inolvidables.
+        </p>
+        <p>
+          ¡Te invitamos a unirte a nosotros en este emocionante viaje culinario!
+        </p>
+      </article>
     </main>
-    <!-- FIN FORMULARIO CONTACTO -->
 
     <!-- ASIDE DESCUBRE NUESTROS MENUS -->
     <aside>
       <h2>Descubre nuestros menus</h2>
 
       <div class="nuestros_menus">
-
         <div class="empresa">
           <picture class="mascara">
             <source
@@ -179,7 +130,9 @@
             />
           </picture>
           <h3>Empresas</h3>
-          <button id="empresa_page" title="Ir a menú para empresas">Ver menú</button>
+          <button id="empresa_page" title="Ir a menú para empresas">
+            Ver menú
+          </button>
         </div>
 
         <div class="celebraciones">
@@ -199,7 +152,9 @@
           </picture>
 
           <h3>Celebraciones</h3>
-          <button type="button" title="Ir a menú para celebraciones">Ver menú</button>
+          <button type="button" title="Ir a menú para celebraciones">
+            Ver menú
+          </button>
         </div>
 
         <div class="escuela">
@@ -218,7 +173,7 @@
             />
           </picture>
           <h3>Escuelas</h3>
-          <button id="escuela_page" type="button" title="Ir a menú para escuela">Ver menú</button>
+          <button type="button" title="Ir a menú para escuela">Ver menú</button>
         </div>
       </div>
     </aside>
@@ -240,18 +195,18 @@
         </li>
 
         <li class="elemento1">
-          <a href="https://facebook.com/FarteraCatering"
-          target="_blank"><img src="icon/facebook.svg" alt="icono de facebook"
+          <a href="https://facebook.com/FarteraCatering" target="_blank"
+            ><img src="icon/facebook.svg" alt="icono de facebook"
           /></a>
         </li>
         <li class="elemento2">
-          <a href="https://twitter.com/FarteraCatering"
-          target="_blank"><img src="icon/instagram.svg" alt="icono de instagram"
+          <a href="https://twitter.com/FarteraCatering" target="_blank"
+            ><img src="icon/instagram.svg" alt="icono de instagram"
           /></a>
         </li>
         <li class="elemento3">
-          <a href="https://instagram.com/FarteraCatering"
-            target="_blank"><img src="icon/twitter.svg" alt="icono de twitter"
+          <a href="https://instagram.com/FarteraCatering" target="_blank"
+            ><img src="icon/twitter.svg" alt="icono de twitter"
           /></a>
         </li>
         <li>

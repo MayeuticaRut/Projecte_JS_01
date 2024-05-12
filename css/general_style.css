@@ -1,4 +1,4 @@
-/*************                               BODY                                 **********/
+/*************              BODY                      **********/
 body {
   font-family: "roboto-regular";
   font-size: 1rem;
@@ -177,7 +177,7 @@ aside {
 } 
 */
 .nuestros_menus h3 {
-  font-size: 34px;
+  font-size: 2.125rem;/*34px*/
 }
 aside h2 {
   padding-top: 54px;

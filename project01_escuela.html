@@ -16,7 +16,6 @@
   <body>
     <!-- HEADER : LOGO MENU Y BREADCRUMBS -->
     <header>
-
       <!-- LOGO Y MENU -->
       <div class="cabecera">
         <!-- LOGO ESCRITORIO Y MOVIL -->
@@ -42,8 +41,12 @@
           <ul>
             <li><a href="index.html" target="_blank">INICIO</a></li>
             <li><a href="#">HISTORIA</a></li>
-            <li><a href="project01_empresa.html" target="_blank">SERVICIOS</a></li>
-            <li><a href="#">CONTACTOS</a></li>
+            <li>
+              <a href="project01_empresa.html" target="_blank">SERVICIOS</a>
+            </li>
+            <li>
+              <a href="project01_contacto.html" target="_blank">CONTACTOS</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -56,113 +59,117 @@
               <a href="index.html" target="_blank">INICIO </a>
             </li>
             <li>
-              <a href="#" aria-current="page">CONTACTOS</a>
+              <a href="#">SERVICIOS</a>
+            </li>
+            <li>
+              <a href="#" aria-current="page">MENÚ ESCUELAS</a>
             </li>
           </ol>
         </nav>
       </div>
       <!-- FIN BREADCRUMB -->
-
     </header>
     <!--FIN HEADER -->
 
-    <!-- FORMULARIO CONTACTO -->
-    <main>
-      <h1>Contacto</h1>
-      <form method="post" enctype="multipart/form-data" name="register-form">
-        <fieldset class="formulario">
-          <legend>Solicita presupuesto</legend>
+    <!-- MAIN MENU PARA ESCUELAS -->
+    <main class="menu_escuela">
+      <h1>Menú para escuelas</h1>
+
+      <span>
+        Ofrecemos menús equilibrados y adaptados para niños en edad escolar,
+        teniendo en cuenta alergias y restricciones dietéticas. Nuestro objetivo
+        es proporcionar opciones saludables y deliciosas que satisfagan las
+        necesidades de todos los estudiantes.
+      </span>
+
+      <h2>Menú Semanal</h2>
+      <section class="sec_menu_escuela">
+        <article>
+          <h2>Dia 1:</h2>
           <ul>
-            <li class="label_normal">
-              <label for="nombre">Nombre</label>
-              <input
-                id="nombre"
-                name="nombre"
-                type="text"
-                placeholder="Escriba aquí su nombre"
-                tabindex="1"
-                required
-              />
+            <li>
+              • Plato principal: Pollo a la plancha con arroz integral y
+              vegetales salteados.
             </li>
-            <li class="label_normal">
-              <label for="empresa">Empresa</label>
-              <input
-                id="empresa"
-                name="empresa"
-                type="text"
-                placeholder="Escriba aquí su empresa"
-                tabindex="2"
-                required/>
+            <li>
+              • Opción vegetariana: Tacos de frijoles negros con guacamole y
+              ensalada mixta
             </li>
-            <li class="label_normal">
-              <label for="web">Web</label>
-              <input
-                id="web"
-                name="web"
-                type="url"
-                placeholder="Escriba aquí el url, inicie por https://"
-                tabindex="3"
-                required
-              />
-            </li>
-            <li class="label_normal">
-              <label for="asistentes"
-                >Número de asistentes aproximado (mínimo 20 - máximo 200)</label
-              >
-              <input
-                id="asistentes"
-                name="asistentes"
-                type="number"
-                min="20"
-                max="200"
-                value="20"
-                placeholder="Escriba aquí el url, inicie por https://"
-                tabindex="4"
-                required
-              />
-            </li>
-            <li class="label_normal">
-              <label for="email">Email</label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                placeholder="Escriba aquí su email"
-                pattern="^((?!\.)[\w\-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$"
-                tabindex="5"
-                required
-              />
-            </li>
-            <li class="label_normal">
-              <label for="mensaje">Mensaje</label>
-              <textarea
-                name="mensaje"
-                id="mensaje"
-                placeholder="Escriba aquí su mensaje"
-                tabindex="6"
-              ></textarea>
-            </li>
-            <li class="align_center">
-              <input id="politica" type="checkbox" tabindex="7" required />
-              <label for="politica"
-                >He leído y acepto la <a>política de privacidad</a></label
-              >
-            </li>
-            <li class="align_center">
-              <button type="submit" tabindex="8">CONTACTAR</button>
-            </li>
+            <li>• Postre: Macedonia de frutas frescas.</li>
+            <li>• Bebida: Agua y zumo natural.</li>
           </ul>
-        </fieldset>
-      </form>
+        </article>
+        <article>
+          <h2>Dia 2:</h2>
+          <ul>
+            <li>
+              • Plato principal: Pasta integral con salsa de tomate casera y
+              albóndigas de carne.
+            </li>
+            <li>
+              • Opción vegetariana: Espaguetis integrales con salsa de tomate
+              casera y albóndigas de soja.
+            </li>
+            <li>• Postre: Yogur natural con miel y nueces.</li>
+            <li>• Bebida: Agua y zumo natural.</li>
+          </ul>
+        </article>
+        <article>
+          <h2>Dia 3:</h2>
+          <ul>
+            <li>
+              • Plato principal: Pescado a la plancha con puré de patatas y
+              espinacas salteadas.
+            </li>
+            <li>
+              • Opción vegetariana: Filete de tofu a la plancha con puré de
+              patatas y espinacas salteadas.
+            </li>
+            <li>• Postre: Gelatina de frutas.</li>
+            <li>• Bebida: Agua y zumo natural.</li>
+          </ul>
+        </article>
+        <article>
+          <h2>Dia 4:</h2>
+          <ul>
+            <li>
+              • Plato principal: Espaguetis a la boloñesa con carne picada de
+              ternera.
+            </li>
+            <li>• Opción vegetariana: Espaguetis a la boloñesa de lentejas.</li>
+            <li>• Postre: Barrita de cereal casera.</li>
+            <li>• Bebida: Agua y zumo natural.</li>
+          </ul>
+        </article>
+        <article>
+          <h2>Dia 5:</h2>
+          <ul>
+            <li>
+              • Plato principal: Nuggets de pollo con patatas al horno y
+              ensalada verde.
+            </li>
+            <li>
+              • Opción vegetariana: Nuggets de tofu con patatas al horno y
+              ensalada verde.
+            </li>
+            <li>• Postre: Manzana asada con canela.</li>
+            <li>• Bebida: Agua y zumo natural.</li>
+          </ul>
+        </article>
+      </section>
+      <span>
+        Los menús pueden ser personalizados según las necesidades específicas
+        de cada escuela. Nuestros platos son preparados teniendo en cuenta
+        alergias y restricciones alimentarias.
+      </span>
     </main>
-    <!-- FIN FORMULARIO CONTACTO -->
+    <!-- FIN MAIN MENU PARA ESCUELAS -->
 
     <!-- ASIDE DESCUBRE NUESTROS MENUS -->
     <aside>
       <h2>Descubre nuestros menus</h2>
 
       <div class="nuestros_menus">
-
         <div class="empresa">
           <picture class="mascara">
             <source
@@ -179,7 +186,9 @@
             />
           </picture>
           <h3>Empresas</h3>
-          <button id="empresa_page" title="Ir a menú para empresas">Ver menú</button>
+          <button id="empresa_page" title="Ir a menú para empresas">
+            Ver menú
+          </button>
         </div>
 
         <div class="celebraciones">
@@ -199,7 +208,9 @@
           </picture>
 
           <h3>Celebraciones</h3>
-          <button type="button" title="Ir a menú para celebraciones">Ver menú</button>
+          <button type="button" title="Ir a menú para celebraciones">
+            Ver menú
+          </button>
         </div>
 
         <div class="escuela">
@@ -218,7 +229,7 @@
             />
           </picture>
           <h3>Escuelas</h3>
-          <button id="escuela_page" type="button" title="Ir a menú para escuela">Ver menú</button>
+          <button type="button" title="Ir a menú para escuela">Ver menú</button>
         </div>
       </div>
     </aside>
@@ -240,18 +251,18 @@
         </li>
 
         <li class="elemento1">
-          <a href="https://facebook.com/FarteraCatering"
-          target="_blank"><img src="icon/facebook.svg" alt="icono de facebook"
+          <a href="https://facebook.com/FarteraCatering" target="_blank"
+            ><img src="icon/facebook.svg" alt="icono de facebook"
           /></a>
         </li>
         <li class="elemento2">
-          <a href="https://twitter.com/FarteraCatering"
-          target="_blank"><img src="icon/instagram.svg" alt="icono de instagram"
+          <a href="https://twitter.com/FarteraCatering" target="_blank"
+            ><img src="icon/instagram.svg" alt="icono de instagram"
           /></a>
         </li>
         <li class="elemento3">
-          <a href="https://instagram.com/FarteraCatering"
-            target="_blank"><img src="icon/twitter.svg" alt="icono de twitter"
+          <a href="https://instagram.com/FarteraCatering" target="_blank"
+            ><img src="icon/twitter.svg" alt="icono de twitter"
           /></a>
         </li>
         <li>
