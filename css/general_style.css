@@ -2,7 +2,7 @@
 body {
   font-family: "roboto-regular";
   font-size: 1rem;
-  background-color: #fff;
+  background-color: #f4f4f4;
 }
 /* esto es general para el nav menu y para breadcrumb */
 /* listas */
@@ -128,11 +128,9 @@ a:active {
 
 /**cuando es la página actual se pone en negrita**/
 .breadcrumb [aria-current="page"] {
-  color: #000;
   font-weight: 700;
-  text-decoration: none;
 }
-/************************************ FIN BREADCRUMBS ************************************/
+/************************ FIN BREADCRUMBS ********************************/
 
 /*********************** ASIDE NUESTROS MENUS *********************************/
 aside {
