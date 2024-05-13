@@ -6,6 +6,12 @@
   width: 100%;
   height: 560px;
 }
+#imagen picture {
+  display: none;
+}
+#imagen .foto {
+  display: block;
+}
 /************** MAIN NUESTRO VALORES  ****************/
 main {
   display: flex;
@@ -145,7 +151,7 @@ main span, main p {
 
 /*******************  FIN MENU PARA ESCUELA Y EMPRESA ********************/
 
-/* pokitica de privaxidad */
+/* pokitica de privacidad */
 article h3 {
   font-size: 2rem;
 }

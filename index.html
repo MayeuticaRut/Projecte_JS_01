@@ -11,14 +11,13 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/general_style.css" />
     <link rel="stylesheet" href="css/estilo_inicio.css" />
+    <link rel="stylesheet" href="css/estilo_carrusel.css">
     <link rel="stylesheet" href="css/estilo_movil.css" />
   </head>
   <body>
-
     <!-- HEADER : LOGO MENU Y BREADCRUMBS -->
     <header>
-      <div class="cabecera display_flex justify_content_space_between">
-        
+      <div class="cabecera">
         <!-- LOGO ESCRITORIO Y MOVIL -->
         <picture>
           <source
@@ -30,25 +29,24 @@
             alt="Logo + Fartera Catering"
           />
         </picture>
-        
+
         <!-- IMAGEN MENU HAMBURGUESA -->
-        <a id="boton">
+        <a id="boton" title="Ir al menú de navegación">
           <img src="icon/bars-solid.svg" alt="Menu hamburguesa" />
         </a>
         <!-- FIN IMAGEN MENU HAMBURGUESA -->
-        
+
         <!-- NAV MENU -->
         <nav id="nav_menu" class="nav_menu">
           <ul>
-            <li><a href="#">INICIO</a></li>
-            <li><a href="#">HISTORIA</a></li>
-            <li><a href="project01_empresa.html" target="_blank">SERVICIOS</a></li>
-            <li><a href="project01_contacto.html" target="_blank">CONTACTOS</a></li>
+            <li><a href="#" target="_self" title="Ir a la página actual">INICIO</a></li>
+            <li><a href="historia.html" target="_blank" title="Ir a la página de historia">HISTORIA</a></li>
+            <li><a href="empresa.html" target="_blank" title="Ir a la página de servicios">SERVICIOS</a></li>
+            <li><a href="contacto.html" target="_blank" title="Ir a la página de contactos">CONTACTOS</a></li>
           </ul>
         </nav>
-
       </div>
-      
+
       <!-- BREADCRUMB -->
       <!-- <div class="breadcrumb">
         <nav>
@@ -59,22 +57,44 @@
           </ol>
         </nav>
       </div> -->
+      
       <!--FIN HEADER -->
     </header>
     <!--FIN HEADER -->
 
     <!-- PORTADA -->
+    <!-- portada es la clase carrousel -->
     <div class="portada">
-      <picture>
-        <source
-          srcset="
-            img/foto3-pase1.jpg,
-            img/foto3-pase1@2x.jpg 2x,
-            img/foto3-pase1@3x.jpg 3x
-          "
-        />
-      </picture>
-      <img src="img/foto3-pase1@3x.jpg" alt="Mesa y vasos adornados" />
+
+      <!-- CONTROL CARRUSEL -->
+      <div id="control">
+        <a id="retroceder" href=""></a>
+        <a id="avanzar" href=""></a>
+      </div>
+
+        <!--CARGA LAS IMÁGENES-->
+      <div id="imagen">
+        <picture>
+          <source srcset="img/foto1-pase.jpg" />
+          <img class="foto" src="img/foto1-pase.jpg" alt="" />
+        </picture>
+       
+        <picture>
+          <source srcset="img/foto2-pase.jpg" />
+          <img class="foto" src="img/foto2-pase.jpg" alt="" />
+        </picture>
+    
+        <picture>
+          <source
+            srcset="
+              img/foto3-pase1.jpg,
+              img/foto3-pase1@2x.jpg 2x,
+              img/foto3-pase1@3x.jpg 3x
+            "
+          />
+          <img class="foto" src="img/foto3-pase1@3x.jpg" alt="Mesa y vasos adornados" />
+        </picture>
+      </div>
     </div>
     <!-- FIN DE PORTADA -->
 
@@ -83,7 +103,10 @@
       <h1>Nuestros Valores</h1>
       <section class="nuestros_valores row_reverse">
         <article class="art_img">
-          <img src="img/profesionalidad.jpg" alt="Un hombre sirviendo una botella en multiples vasos" />
+          <img
+            src="img/profesionalidad.jpg"
+            alt="Un hombre sirviendo una botella en multiples vasos"
+          />
         </article>
         <article class="art_text">
           <h2>Profesionalidad</h2>
@@ -96,12 +119,16 @@
       </section>
       <section class="nuestros_valores">
         <article class="art_img">
-          <img src="img/compromiso.jpg" alt="dos cacerolas muy grandes con comida hirviendo dentro " />
+          <img
+            src="img/compromiso.jpg"
+            alt="dos cacerolas muy grandes con comida hirviendo dentro "
+          />
         </article>
         <article class="art_text">
           <h2>Compromiso</h2>
           <p>
-            Seleccionamos productos frescos de temporada y trabajamos con pequeños proveedores de km0. Queremos dejar huella.
+            Seleccionamos productos frescos de temporada y trabajamos con
+            pequeños proveedores de km0. Queremos dejar huella.
           </p>
           <button>CONTACTAR</button>
         </article>
@@ -129,7 +156,9 @@
             />
           </picture>
           <h3>Empresas</h3>
-          <button id="empresa_page" title="Ir a menú para empresas">Ver menú</button>
+          <button id="empresa_page" title="Ir a menú para empresas">
+            Ver menú
+          </button>
         </div>
 
         <div class="celebraciones">
@@ -168,7 +197,9 @@
             />
           </picture>
           <h3>Escuelas</h3>
-          <button id="escuela_page" title="Ir a menú para escuela">Ver menú</button>
+          <button id="escuela_page" title="Ir a menú para escuela">
+            Ver menú
+          </button>
         </div>
       </div>
     </aside>
@@ -190,18 +221,18 @@
         </li>
 
         <li class="elemento1">
-          <a href="https://facebook.com/FarteraCatering"
-          target="_blank"><img src="icon/facebook.svg" alt="icono de facebook"
+          <a href="https://facebook.com/FarteraCatering" target="_blank"
+            ><img src="icon/facebook.svg" alt="icono de facebook"
           /></a>
         </li>
         <li class="elemento2">
-          <a href="https://twitter.com/FarteraCatering"
-          target="_blank"><img src="icon/instagram.svg" alt="icono de instagram"
+          <a href="https://twitter.com/FarteraCatering" target="_blank"
+            ><img src="icon/instagram.svg" alt="icono de instagram"
           /></a>
         </li>
         <li class="elemento3">
-          <a href="https://instagram.com/FarteraCatering"
-            target="_blank"><img src="icon/twitter.svg" alt="icono de twitter"
+          <a href="https://instagram.com/FarteraCatering" target="_blank"
+            ><img src="icon/twitter.svg" alt="icono de twitter"
           /></a>
         </li>
         <li>
@@ -218,6 +249,7 @@
     <!-- FIN FOOTER -->
 
     <!-- SCRIPT -->
+    <!-- EL TYPE no es necesario en html 5, en xhtml sí -->
     <script src="js/script.js"></script>
   </body>
 </html>
