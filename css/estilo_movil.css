@@ -32,6 +32,30 @@
     height: 45px;
   }
 
+  #nav_menu {
+    height: 70%;
+    width: 100vw;
+    background: white;
+    
+  
+    position: absolute;
+    top: 8em;
+    left: 0;
+    
+
+    display: flex;
+    justify-content: center;
+}
+#nav_menu ul {
+    font-size: 1.375rem;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+padding: 50px 0 50px 0;
+    gap: 30px;
+
+}
+
   /* BREADCRUMB */
   .breadcrumb {
     display: none;

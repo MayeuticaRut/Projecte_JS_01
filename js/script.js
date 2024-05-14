@@ -6,8 +6,8 @@ const navMenu = document.getElementById("nav_menu");
 
 // CONTROLANDO MIS AVANCES POR CONSOLA
 
-console.log(boton);
-console.log(navMenu);
+// console.log(boton);
+// console.log(navMenu);
 
 // var style = window.getComputedStyle("navMenu");
 // var displayStyle = style.display;
@@ -16,7 +16,7 @@ console.log(navMenu);
 // FUNCION PARA EL MENU HAMBURGUESA
 function mostrarONo() {
   if (navMenu.style.display == "none"){ 
-    navMenu.style.display = "block";
+    navMenu.style.display = "flex";
 }else{ 
   navMenu.style.display = "none";
 }
