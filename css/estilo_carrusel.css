@@ -1,7 +1,5 @@
 
 
-
-
 a:active {
 filter: drop-shadow(0 2px 2px 2px rgba(0, 0, 0, 0.24));
 
@@ -20,8 +18,7 @@ a#retroceder, a#avanzar {
      /*Ancho y alto de la <a>*/
     width: 4.4vw;
     height: 7vw;/*Viewport Height - relativo al alto del visor*/
-    border: 2px solid black;
-
+   
       /* paso a ambas la flecha de la derecha */
       background-image: url("../icon/flecha_der.svg");
 
@@ -31,11 +28,14 @@ a#retroceder, a#avanzar {
 }
 a#retroceder {
     left: 10px;  
+    top: 535px;
    
 }
 
 a#avanzar {
     right: 10px;
+    top: 520px;
+
     transform:rotate(180deg);
     /*Giramos 180 grados*/ 
  

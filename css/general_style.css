@@ -1,9 +1,33 @@
+/*  Utilizo variables para colores, 
+fuentes y tamaños comunes 
+para facilitar el mantenimiento*/
+:root {
+--font-family-base: "roboto-regular";
+--font-size-base: 1rem;/*uso rem para un diseño sea más flexible y escalable*/
+
+--color-background: #f4f4f4;
+--color-background-footer:black;
+--color-primary: #069697;
+--color-text: black;
+--color-text-inverse: white;
+--color-link-hover: underline;
+--padding-base: 2.25rem; /*36px*/
+
+--border-radius-base: 2px;
+--color-shadow:rgba(0, 0, 0, 0.25);
+--color-shadow-active: rgba(0, 0, 0, 0.75);
+--box-shadow-base: 0px 2px 2px 0px var(--color-shadow);
+
+}
+
+
 /*************              BODY                      **********/
 body {
-  font-family: "roboto-regular";
-  font-size: 1rem;
-  background-color: #f4f4f4;
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  background-color: var(--color-background);
 }
+
 /* esto es general para el nav menu y para breadcrumb */
 /* listas */
 li {
@@ -11,26 +35,25 @@ li {
 }
 
 li a {
-  color: black;
+  color: var(--color-text);
   text-decoration: none;
 }
 /* titulo 1 */
-h1 {
-  font-size: 3rem; /*48px*/
-  text-align: center;
-
-  padding-top: .7em; /*33px-- 68,75% del rem*/
-}
-
-h2 {
+h1, h2{
   font-size: 3rem;/*48px*/
 }
-button {
-  border-radius: 2px;
-  background: #069697;
-  color: white;
 
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+h1 {
+  text-align: center;
+  padding-top: 0.7em; /*33px-- 68,75% del rem*/
+}
+
+button {
+  border-radius: var(--border-radius-base);
+  background: var(--color-primary);
+  color: var(--color-text-inverse);
+
+  box-shadow: var(--box-shadow-base);
 }
 /*                fin general                        */
 
@@ -42,29 +65,24 @@ button {
   justify-content: space-between;
 }
 
-/* LOGO ESCRITORIO LOGO MOVIL */
-.cabecera picture {
-  width: 234px;
-}
-
+/* LOGO ESCRITORIO Y MOVIL */
 .cabecera {
   font-size: 1.125rem;
 
   height: 13.9375rem;
-  margin: 2.25rem; /*36px*/
-
-  display: flex;
-  justify-content: space-between;
+  margin: var(--padding-base);
 }
 
-/************************************ BOTON MENU HAMBURGUESA ***********/
+.cabecera picture {
+  width: 234px;
+}
+
+/************************* BOTON MENU HAMBURGUESA ***********/
 #boton {
   display: none;
 }
 
-/*****************************************  NAV  *************************************/
-/* nav.nav_menu es más específico
-.nav_menu es menos específico */
+/****************************  NAV  **************************/
 
 /* el profe dice lo correcto crear la clase en el nav para esto */
 .nav_menu {
@@ -73,44 +91,32 @@ button {
   align-self: flex-end;
 }
 
-.nav_menu ul {
+/* .nav_menu ul {
   display: flex;
   justify-content: space-between;
-}
+} */
 
 
-/* +++ LVHA +++ */
-
-/* este es el orden** */
-
-/* Aspecto de un enlace que aún no ha sido visitado: las cosas globales,*/
+/*enlace que aún no ha sido visitado: las cosas globales,*/
 a:link {
   text-decoration: none;
 }
 
-/* Aspecto de un enlace una vez ha sido visitado:*/
-/* a:visited {
-  color: brown;
-} */
-
-/* Aspecto de un enlace al "pasar por encima" o tap en una pantalla táctil:
-https://developer.mozilla.org/en-US/docs/Web/CSS/:hover */
+/*enlace al "pasar por encima" o tap en una pantalla táctil:*/
 a:hover {
-  text-decoration: underline;
+  text-decoration: var(--color-link-hover);
 }
 
-/* Aspecto del enlace una vez este está mostrándose activo:
-https://developer.mozilla.org/en-US/docs/Web/CSS/:active */
+/*enlace una vez este está mostrándose activo*/
 a:active {
   /* se puede usar cualquiera de los dos */
   /* filter: drop-shadow(0px 2px 2px 0px rgba(0,0,0,0.75)); */
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px var(--color-shadow-active);
 }
 
 /************************************ BREADCRUMBS ******************************************/
-
 .breadcrumb {
-  padding: 20px 2.25rem 0 2.25rem; /*36px*/
+  padding: 20px var(--padding-base) 0 var(--padding-base); /*36px*/
 }
 
 .breadcrumb li + li::before {
@@ -130,30 +136,28 @@ a:active {
 .breadcrumb [aria-current="page"] {
   font-weight: 700;
 }
-/************************ FIN BREADCRUMBS ********************************/
+/************************ FIN BREADCRUMBS ************************/
 
-/*********************** ASIDE NUESTROS MENUS *********************************/
+/********************* ASIDE NUESTROS MENUS ***********************/
 aside {
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   align-items: center;
 }
 .nuestros_menus {
-  display: flex;
+  /* display: flex; */
   flex-wrap: wrap;
-
   gap: 108px; 
- 
   padding: 90px 0px 113px 0px;
 }
 .nuestros_menus div {
   width: 15.9375rem; /*255px */
   height: 372px; /*372px */
 
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 /* PICTURE */
 .mascara {
@@ -164,49 +168,43 @@ aside {
   -webkit-mask-image: url("../img/Ellipse_2.png");
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
-  /* mask-position: 50%;  X / Y  */
 }
-/* IMG */
-/* .foto-apaisada {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;  Mantiene la proporción 
-  overflow: hidden;
-} 
-*/
+
 .nuestros_menus h3 {
   font-size: 2.125rem;/*34px*/
 }
+
 aside h2 {
   padding-top: 54px;
-
   text-align: center;
 }
 
 .nuestros_menus button {
-  font-size: 14px;
+  font-size: 0.875rem;
   width: 102px;
   height: 36px;
 
 }
 
 /*************                 FOOTER                ************/
-
 footer {
   height: 205px;
-  background-color: black;
-  color: white;
+  background-color: var(--color-background-footer);
+  color: var(--color-text-inverse);
 
-  font-size: 1rem; /* 16px */
+  font-size: var(--font-size-base); /* 16px */
   padding: 46px 87px 58px 87px;
 }
+
 footer img {
   width: 45px;
   height: 45px;
 }
+
 footer a {
-  color: #fff;
+  color: var(--color-text-inverse);
 }
+
 .grid {
   display: grid;
   grid-template-columns: 205px 289px 168px 45px 45px 45px;

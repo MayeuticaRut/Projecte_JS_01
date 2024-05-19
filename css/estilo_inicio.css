@@ -6,9 +6,8 @@
   width: 100%;
   height: 560px;
 }
-#imagen picture {
-  display: none;
-}
+
+
 #imagen .foto {
   display: block;
 }
