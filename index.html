@@ -1,17 +1,15 @@
 <!DOCTYPE html>
-<html lang="es-Es">
+<html lang="es-ES">
   <head>
     <title>Fartera Catering</title>
     <!-- META -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- TIPOLOGIA -->
-    <link rel="stylesheet" href="css/type.css" />
     <!-- LINK -->
     <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/type.css" />
     <link rel="stylesheet" href="css/general_style.css" />
     <link rel="stylesheet" href="css/estilo_inicio.css" />
-    <link rel="stylesheet" href="css/estilo_carrusel.css">
     <link rel="stylesheet" href="css/estilo_movil.css" />
   </head>
   <body>
@@ -47,13 +45,11 @@
           </ul>
         </nav>
       </div>
-     
     </header>
     <!--FIN HEADER -->
 
     <!-- PORTADA -->
-
-    <!-- portada es la clase carrousel -->
+    <!--carrousel es la clase portada -->
     <div class="portada">
 
       <!-- CONTROL CARRUSEL -->
@@ -69,16 +65,16 @@
     <!-- FIN DE PORTADA -->
 
     <!-- SECCION NUESTROS VALORES -->
-    <main>
+    <main class="display_flex">
       <h1>Nuestros Valores</h1>
-      <section class="nuestros_valores row_reverse">
+      <section class="nuestros_valores display_flex row_reverse">
         <article class="art_img">
           <img
             src="img/profesionalidad.jpg"
             alt="Un hombre sirviendo una botella en multiples vasos"
           />
         </article>
-        <article class="art_text">
+        <article class="art_text display_flex justify_content_space_between">
           <h2>Profesionalidad</h2>
           <p>
             Un extenso grupo de profesionales reunidos por y para satisfacer las
@@ -87,14 +83,14 @@
           <button>CONTACTAR</button>
         </article>
       </section>
-      <section class="nuestros_valores">
+      <section class="nuestros_valores display_flex">
         <article class="art_img">
           <img
             src="img/compromiso.jpg"
             alt="dos cacerolas muy grandes con comida hirviendo dentro "
           />
         </article>
-        <article class="art_text">
+        <article class="art_text display_flex justify_content_space_between">
           <h2>Compromiso</h2>
           <p>
             Seleccionamos productos frescos de temporada y trabajamos con
@@ -221,7 +217,6 @@
     <!-- FIN FOOTER -->
 
     <!-- SCRIPT -->
-    <!-- EL TYPE no es necesario en html 5, en xhtml sí -->
     <script src="js/script.js"></script>
   </body>
 </html>

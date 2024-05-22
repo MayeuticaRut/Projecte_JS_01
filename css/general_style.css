@@ -3,10 +3,13 @@ fuentes y tamaños comunes
 para facilitar el mantenimiento*/
 :root {
 --font-family-base: "roboto-regular";
---font-size-base: 1rem;/*uso rem para un diseño sea más flexible y escalable*/
+--font-family-secundary: "roboto-light";
+--font-size-base: 1rem;
+/*uso rem para un diseño sea más flexible y escalable*/
 
 --color-background: #f4f4f4;
 --color-background-footer:black;
+--color-background-input: rgba(148, 148, 148, 0.1);
 --color-primary: #069697;
 --color-text: black;
 --color-text-inverse: white;
@@ -38,7 +41,7 @@ li a {
   color: var(--color-text);
   text-decoration: none;
 }
-/* titulo 1 */
+
 h1, h2{
   font-size: 3rem;/*48px*/
 }
@@ -73,7 +76,7 @@ button {
   margin: var(--padding-base);
 }
 
-.cabecera picture {
+.cabecera picture img {
   width: 234px;
 }
 
@@ -91,12 +94,6 @@ button {
   align-self: flex-end;
 }
 
-/* .nav_menu ul {
-  display: flex;
-  justify-content: space-between;
-} */
-
-
 /*enlace que aún no ha sido visitado: las cosas globales,*/
 a:link {
   text-decoration: none;
@@ -109,8 +106,6 @@ a:hover {
 
 /*enlace una vez este está mostrándose activo*/
 a:active {
-  /* se puede usar cualquiera de los dos */
-  /* filter: drop-shadow(0px 2px 2px 0px rgba(0,0,0,0.75)); */
   box-shadow: 10px 10px 5px 0px var(--color-shadow-active);
 }
 
