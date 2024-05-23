@@ -108,7 +108,7 @@ main {
 }
 .sec_menu_empresa article,
 .sec_menu_escuela article {
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
 
   gap: 26px;
