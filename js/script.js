@@ -7,9 +7,9 @@ let img = document.createElement("img");
 let posicionActual = 0;
 let descripcionActual = 0;
 let fotos = [
-  "../img/foto1-pase.jpg",
-  "../img/foto2-pase.jpg",
-  "../img/foto3-pase.jpg",
+  "img/foto1-pase.jpg",
+  "img/foto2-pase.jpg",
+  "img/foto3-pase.jpg",
 ];
 
 
