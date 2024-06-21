@@ -71,6 +71,7 @@ button {
 /* LOGO ESCRITORIO Y MOVIL */
 .cabecera {
   font-size: 1.125rem;
+  font-family: var(--font-family-base);
 
   height: 13.9375rem;
   margin: var(--padding-base);
