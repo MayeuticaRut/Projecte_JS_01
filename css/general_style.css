@@ -1,3 +1,6 @@
+@import url(reset.css);
+@import url(type.css);
+
 /*  Utilizo variables para colores, 
 fuentes y tamaños comunes 
 para facilitar el mantenimiento*/
@@ -58,7 +61,7 @@ button {
 
   box-shadow: var(--box-shadow-base);
 }
-/*                fin general                        */
+/*                   fin general                     */
 
 /*************          HEADER         *************/
 .display_flex {

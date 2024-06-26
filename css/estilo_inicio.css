@@ -9,7 +9,7 @@
   display: block;
 }
 
-/************** MAIN NUESTRO VALORES  ****************/
+/************** MAIN NUESTROS VALORES  ****************/
 main {
   flex-direction: column;
   gap: 50px;
@@ -32,7 +32,7 @@ main {
   width: 585px;
   height: 340px;
 }
-.nuestros_valores button, .align_center button {
+.nuestros_valores button, .align_center button, .main-article button {
   width: 175px;
   height: 36px;
 }
@@ -132,6 +132,12 @@ main span,
 
 /*******************  FIN MENU PARA ESCUELA Y EMPRESA ********************/
 
+/*   HISTORIA   */
+
+.main-article-text, .main-article {
+  margin: 0px 50px;
+  text-align: justify;
+}
 /* politica de privacidad */
 article h3 {
   font-size: 2rem;
